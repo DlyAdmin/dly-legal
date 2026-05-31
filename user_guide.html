@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide – Dly</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      color: #1a1a1a;
+      line-height: 1.75;
+    }
+    h1 { font-size: 2.2rem; margin-bottom: 6px; color: #111; }
+    h2 { font-size: 1.45rem; margin-top: 52px; margin-bottom: 6px; color: #222; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+    h3 { font-size: 1.1rem; margin-top: 28px; margin-bottom: 4px; color: #333; }
+    p, li { font-size: 0.97rem; color: #444; margin: 6px 0; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: #5b6af0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .subtitle { color: #666; font-size: 1.05rem; margin-top: 4px; }
+    .updated { color: #999; font-size: 0.88rem; margin-top: 6px; }
+    hr { border: none; border-top: 1px solid #e8e8e8; margin: 48px 0; }
+    .tip {
+      background: #f0f4ff;
+      border-left: 4px solid #5b6af0;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 0.93rem;
+      color: #333;
+    }
+    .tip strong { color: #5b6af0; }
+    .badge {
+      display: inline-block;
+      background: #f0f4ff;
+      color: #5b6af0;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 20px;
+      border: 1px solid #d0d8ff;
+      vertical-align: middle;
+      margin: 0 2px;
+    }
+    .badge.green { background: #edfaf3; color: #1a8f55; border-color: #b3e6cc; }
+    .badge.orange { background: #fff5eb; color: #c96a00; border-color: #ffd9a8; }
+    .badge.red { background: #fff0f0; color: #c0392b; border-color: #f5b8b8; }
+    .badge.purple { background: #f5f0ff; color: #7c3aed; border-color: #d4b8ff; }
+    .badge.grey { background: #f5f5f5; color: #666; border-color: #ddd; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.93rem; }
+    th { background: #f7f7f7; text-align: left; padding: 10px 14px; color: #333; font-weight: 600; border-bottom: 2px solid #e0e0e0; }
+    td { padding: 9px 14px; border-bottom: 1px solid #f0f0f0; color: #444; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .toc { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 10px; padding: 20px 28px; margin: 32px 0; }
+    .toc h3 { margin-top: 0; font-size: 1rem; color: #555; }
+    .toc ol { margin: 8px 0 0; }
+    .toc li { margin: 5px 0; }
+    .section-icon { font-size: 1.3rem; margin-right: 8px; }
+    .step { counter-increment: steps; display: flex; gap: 14px; margin: 12px 0; align-items: flex-start; }
+    .step-num { background: #5b6af0; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    .step-text { flex: 1; font-size: 0.95rem; color: #444; }
+  </style>
+</head>
+<body>
+
+<h1>📋 Dly — User Guide</h1>
+<p class="subtitle">Your daily planner for tasks, habits, and time analytics</p>
+<p class="updated">Last updated: May 2026</p>
+
+<div class="toc">
+  <h3>📖 Contents</h3>
+  <ol>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#tasks">Tasks Tab</a></li>
+    <li><a href="#pool">Pool (Backlog) Tab</a></li>
+    <li><a href="#habits">Habits Tab</a></li>
+    <li><a href="#analytics">Analytics Tab</a></li>
+    <li><a href="#settings">Settings</a></li>
+    <li><a href="#backup">Backup &amp; Restore</a></li>
+    <li><a href="#tips">Tips &amp; Tricks</a></li>
+  </ol>
+</div>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="getting-started"><span class="section-icon">🚀</span>1. Getting Started</h2>
+
+<p>When you first open Dly, you will see a short onboarding screen. Enter your name and email — this is stored <strong>only on your device</strong> and never sent to any server.</p>
+
+<p>After onboarding, you land on the <strong>home screen</strong> with five tabs at the bottom:</p>
+
+<table>
+  <tr><th>Tab</th><th>What it does</th></tr>
+  <tr><td>🗂 Pool</td><td>Your idea backlog — capture tasks you'll plan later</td></tr>
+  <tr><td>✅ Tasks</td><td>Today's (and any day's) task list</td></tr>
+  <tr><td>🔥 Habits</td><td>Daily/weekly habits with streaks</td></tr>
+  <tr><td>📊 Analytics</td><td>Daily, weekly, and monthly productivity reports</td></tr>
+  <tr><td>⚙️ Settings</td><td>Preferences, backup, theme, and more</td></tr>
+</table>
+
+<div class="tip"><strong>Tip:</strong> All your data lives on your device. No internet required to use Dly.</div>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="tasks"><span class="section-icon">✅</span>2. Tasks Tab</h2>
+
+<h3>Navigating dates</h3>
+<p>The date strip at the top lets you swipe left/right to move between days. Tap any date to jump to it. Tap the calendar icon to pick a specific date. Tap <strong>Today</strong> to return to the current day.</p>
+
+<h3>Creating a task</h3>
+<div class="step"><div class="step-num">1</div><div class="step-text">Tap the <strong>+ button</strong> (bottom right) to open the Add Task screen.</div></div>
+<div class="step"><div class="step-num">2</div><div class="step-text">Enter the task title (required).</div></div>
+<div class="step"><div class="step-num">3</div><div class="step-text">Fill in any optional details: date, start time, duration, category, priority, notes.</div></div>
+<div class="step"><div class="step-num">4</div><div class="step-text">Tap <strong>Save</strong>.</div></div>
+
+<h3>Task fields explained</h3>
+<table>
+  <tr><th>Field</th><th>Description</th></tr>
+  <tr><td><strong>Title</strong></td><td>The name of the task</td></tr>
+  <tr><td><strong>Date</strong></td><td>Which day this task belongs to</td></tr>
+  <tr><td><strong>Start time</strong></td><td>Optional. When enabled, the task appears in time order. When disabled, task is shown as "Anytime"</td></tr>
+  <tr><td><strong>Duration</strong></td><td>How long you expect the task to take (used in analytics)</td></tr>
+  <tr><td><strong>Category</strong></td><td>Group tasks by category (Work, Personal, Health, etc.)</td></tr>
+  <tr><td><strong>Priority</strong></td><td>None / Low / Medium / High</td></tr>
+  <tr><td><strong>Notes</strong></td><td>Any extra details or description</td></tr>
+  <tr><td><strong>Recurrence</strong></td><td>Repeat the task daily, weekly, monthly, or on custom days</td></tr>
+  <tr><td><strong>Task type</strong></td><td>Standard, Focus (single-task mode), or linked to a Habit</td></tr>
+</table>
+
+<h3>Priority levels</h3>
+<p>
+  <span class="badge red">High</span> — urgent, must do today &nbsp;
+  <span class="badge orange">Medium</span> — important but flexible &nbsp;
+  <span class="badge grey">Low</span> — nice to have
+</p>
+
+<h3>Completing a task</h3>
+<p>Tap the <strong>circle checkbox</strong> on the left of any task card. The title gets a strikethrough and the task is marked done. For recurring tasks, only that day's occurrence is marked complete.</p>
+
+<h3>Progress card</h3>
+<p>At the top of each day's list, a progress bar shows how many tasks you've completed out of the total for that day. The percentage updates in real time as you complete tasks.</p>
+
+<h3>Reordering tasks</h3>
+<p>Press and hold the <strong>grip icon</strong> (⠿) on the left of a task card, then drag it up or down to change the order. This only applies to tasks without a specific start time.</p>
+
+<h3>Recurring tasks</h3>
+<p>When creating a task, turn on <strong>Repeat</strong> and choose a recurrence pattern:</p>
+<ul>
+  <li><strong>Daily</strong> — appears every day</li>
+  <li><strong>Weekly</strong> — appears on the same weekday each week</li>
+  <li><strong>Monthly</strong> — appears on the same date each month</li>
+  <li><strong>Custom</strong> — pick specific days of the week (e.g. Mon, Wed, Fri)</li>
+</ul>
+<div class="tip"><strong>Tip:</strong> Completing a recurring task only checks off that specific day — it will appear again on the next occurrence.</div>
+
+<h3>Carry-forward</h3>
+<p>If you don't complete a task today, it can automatically appear on tomorrow's list with a <span class="badge orange">Carried Forward</span> badge. Enable this in <strong>Settings → Carry forward incomplete tasks</strong>.</p>
+
+<h3>Subtasks</h3>
+<p>Open any task → tap <strong>Add subtask</strong> to break a task into smaller steps. Each subtask has its own checkbox. The task card shows a <span class="badge">2/5 subtasks</span> chip when subtasks exist.</p>
+
+<h3>Task detail screen</h3>
+<p>Tap anywhere on a task card (not the checkbox) to open the detail screen. From here you can:</p>
+<ul>
+  <li>Edit any field</li>
+  <li>Add or complete subtasks</li>
+  <li>Delete the task</li>
+  <li>See when the task was completed</li>
+</ul>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="pool"><span class="section-icon">🗂</span>3. Pool (Backlog) Tab</h2>
+
+<p>The <strong>Pool</strong> is your idea backlog — a place to capture things you want to do <em>someday</em> without cluttering today's task list. When you're ready to work on something, plan it to a specific date.</p>
+
+<h3>Adding a pool item</h3>
+<div class="step"><div class="step-num">1</div><div class="step-text">Tap a category section to expand it.</div></div>
+<div class="step"><div class="step-num">2</div><div class="step-text">Type in the <strong>"Add item…"</strong> field at the bottom of that category.</div></div>
+<div class="step"><div class="step-num">3</div><div class="step-text">Press Enter or tap the send icon.</div></div>
+
+<h3>Editing an item title</h3>
+<p>Tap directly on the item's title text — it switches to an inline text field. Edit the name and press Enter (or tap outside) to save.</p>
+
+<h3>Planning an item to a date</h3>
+<p>Tap the <strong>calendar icon</strong> (📅) on the right of any item. This opens the Add Task screen pre-filled with that item's title so you can schedule it for a specific day.</p>
+
+<h3>Marking an item done</h3>
+<p>Tap the <strong>circle icon</strong> on the left to check off an item. Checked-off items are shown with a strikethrough. You can uncheck them at any time.</p>
+
+<h3>Subitems (nested tasks)</h3>
+<p>Pool items support a full tree of subitems — useful for breaking down a big project:</p>
+<ul>
+  <li>Tap the <strong>chevron (›)</strong> on an item to expand/collapse its subitems</li>
+  <li>Tap <strong>+</strong> next to a subitem to add a child item under it</li>
+  <li>Tap the subitem's title to rename it inline</li>
+  <li>Tap <strong>×</strong> to delete a subitem</li>
+  <li>Nesting works at any depth</li>
+</ul>
+
+<h3>Categories</h3>
+<p>Pool items are organised by category. Tap the <strong>+ Add category</strong> button to create a new one. You can reorder categories by dragging the grip icon. Tap a category header to collapse or expand it.</p>
+
+<h3>Deleting an item</h3>
+<p>Tap the <strong>trash icon</strong> on the right of any item. You'll see a confirmation prompt before deletion.</p>
+
+<div class="tip"><strong>Tip:</strong> The Pool is great for "someday/maybe" ideas — things you don't want to forget but aren't ready to schedule yet.</div>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="habits"><span class="section-icon">🔥</span>4. Habits Tab</h2>
+
+<p>Habits are recurring activities you want to build consistency around — like drinking water, exercising, or reading. Unlike tasks, habits track your <strong>streak</strong> and completion history.</p>
+
+<h3>Creating a habit</h3>
+<div class="step"><div class="step-num">1</div><div class="step-text">Tap the <strong>+ FAB</strong> button (bottom right).</div></div>
+<div class="step"><div class="step-num">2</div><div class="step-text">Enter a habit name (e.g. "Drink 8 glasses of water").</div></div>
+<div class="step"><div class="step-num">3</div><div class="step-text">Pick an icon and colour.</div></div>
+<div class="step"><div class="step-num">4</div><div class="step-text">Set the frequency (daily, specific days of the week).</div></div>
+<div class="step"><div class="step-num">5</div><div class="step-text">Set a goal (e.g. 8 glasses per day) if the habit is a count-based habit.</div></div>
+<div class="step"><div class="step-num">6</div><div class="step-text">Optionally add reminder times.</div></div>
+<div class="step"><div class="step-num">7</div><div class="step-text">Tap <strong>Save</strong>.</div></div>
+
+<h3>Completing a habit</h3>
+<p>On the habits screen, each habit shows a <strong>completion circle</strong>. Tap it to log one completion. For count-based habits (e.g. glasses of water), tap multiple times or use the <strong>+1</strong> button in the notification to log each unit.</p>
+
+<h3>7-day strip</h3>
+<p>Each habit card shows the last 7 days as small circles — filled (✓) for days you completed it, empty for days you missed. This gives a quick visual of your recent consistency.</p>
+
+<h3>Streak</h3>
+<p>Your current streak (consecutive days completed) is shown on each habit card. Completing the habit today keeps your streak alive. Missing a scheduled day resets it to 0.</p>
+
+<h3>Show in Tasks</h3>
+<p>Enable <strong>"Show in Tasks"</strong> when creating or editing a habit. This makes the habit appear as a task in the Tasks tab on its scheduled days — so you can see and complete it from your task list without switching tabs.</p>
+
+<h3>Reminders</h3>
+<p>Add one or more reminder times to a habit. You'll get a notification at those times on the days the habit is scheduled. For count-based habits, the notification includes a <strong>+1</strong> button so you can log a completion directly from the notification without opening the app.</p>
+
+<h3>Editing or deleting a habit</h3>
+<p>Tap on a habit card to open its detail/edit screen. Scroll down to find the <strong>Delete</strong> option.</p>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="analytics"><span class="section-icon">📊</span>5. Analytics Tab</h2>
+
+<p>Analytics shows how you're spending your time and how productive you've been. There are three views: <strong>Daily</strong>, <strong>Weekly</strong>, and <strong>Monthly</strong>.</p>
+
+<h3>Daily view</h3>
+<ul>
+  <li><strong>Productivity Score</strong> — a 0–100 score based on tasks completed vs planned for the day</li>
+  <li><strong>Time breakdown</strong> — how many hours you spent on each category</li>
+  <li><strong>Task list</strong> — all tasks for the selected day with their completion status</li>
+  <li><strong>Stats row</strong> — total tasks, completed, total time logged</li>
+</ul>
+
+<h3>Weekly view</h3>
+<ul>
+  <li><strong>Weekly summary</strong> — total tasks completed across the week</li>
+  <li><strong>Day-by-day breakdown</strong> — a bar chart showing tasks completed per day</li>
+  <li><strong>Category breakdown</strong> — which categories took the most time this week</li>
+  <li><strong>Best day</strong> — the day you were most productive</li>
+</ul>
+
+<h3>Monthly view</h3>
+<ul>
+  <li><strong>Monthly summary</strong> — total tasks and hours logged for the month</li>
+  <li><strong>Activity heatmap</strong> — a calendar grid where darker colours = more productive days</li>
+  <li><strong>Category trends</strong> — how your time split across categories changed over the month</li>
+  <li><strong>Insights</strong> — auto-generated observations about your productivity patterns</li>
+</ul>
+
+<div class="tip"><strong>Tip:</strong> Analytics counts time on the day a task is <em>completed</em>, not the day it was scheduled. Complete tasks on time to keep your analytics accurate.</div>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="settings"><span class="section-icon">⚙️</span>6. Settings</h2>
+
+<h3>General preferences</h3>
+<table>
+  <tr><th>Setting</th><th>What it does</th></tr>
+  <tr><td>Carry forward incomplete tasks</td><td>Automatically shows yesterday's unfinished tasks on today's list with a "Carried Forward" badge</td></tr>
+  <tr><td>Start of week</td><td>Choose whether your week starts on Sunday or Monday (affects weekly analytics)</td></tr>
+  <tr><td>Default task duration</td><td>Pre-fills the duration field when creating a new task</td></tr>
+  <tr><td>Theme</td><td>Switch between Light and Dark mode, and choose an accent colour</td></tr>
+</table>
+
+<h3>Categories</h3>
+<p>Go to <strong>Settings → Categories</strong> to manage your task categories. You can:</p>
+<ul>
+  <li>Create new categories with a custom name and colour</li>
+  <li>Set a default duration and default priority for each category</li>
+  <li>Delete categories you no longer need</li>
+</ul>
+
+<h3>Notifications</h3>
+<p>Task and habit reminders are sent as notifications. Make sure Dly has notification permission on your device (<strong>Android Settings → Apps → Dly → Notifications → Allow</strong>).</p>
+
+<h3>Remove Ads</h3>
+<p>Dly is free and supported by ads. If you prefer an ad-free experience, tap <strong>Remove Ads</strong> in Settings to subscribe. Tap <strong>Restore</strong> if you've already subscribed and reinstalled the app.</p>
+
+<h3>Legal</h3>
+<p>View the Privacy Policy and Terms &amp; Conditions from <strong>Settings → Legal</strong>.</p>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="backup"><span class="section-icon">💾</span>7. Backup &amp; Restore</h2>
+
+<p>Dly stores all data locally on your device. To make sure you don't lose your tasks, habits, and categories if you switch phones or reinstall the app, use the built-in backup feature.</p>
+
+<h3>Creating a backup</h3>
+<div class="step"><div class="step-num">1</div><div class="step-text">Go to <strong>Settings → Backup &amp; Restore</strong>.</div></div>
+<div class="step"><div class="step-num">2</div><div class="step-text">Tap <strong>Export Backup</strong>.</div></div>
+<div class="step"><div class="step-num">3</div><div class="step-text">A <code>.json</code> file is generated. Choose where to save it — Google Drive, WhatsApp, email, or local storage.</div></div>
+
+<h3>Restoring from backup</h3>
+<div class="step"><div class="step-num">1</div><div class="step-text">Go to <strong>Settings → Backup &amp; Restore</strong>.</div></div>
+<div class="step"><div class="step-num">2</div><div class="step-text">Tap <strong>Import Backup</strong>.</div></div>
+<div class="step"><div class="step-num">3</div><div class="step-text">Select the <code>.json</code> backup file.</div></div>
+<div class="step"><div class="step-num">4</div><div class="step-text">Confirm — your data will be restored.</div></div>
+
+<div class="tip"><strong>Tip:</strong> Export a backup to Google Drive regularly so you always have a recent copy safe in the cloud.</div>
+
+<hr>
+
+<!-- ═══════════════════════════════════════════════ -->
+<h2 id="tips"><span class="section-icon">💡</span>8. Tips &amp; Tricks</h2>
+
+<ul>
+  <li><strong>Use the Pool as a brain dump</strong> — whenever you think of something to do, add it to the Pool instantly. Plan it to a date later when you have time.</li>
+  <li><strong>Assign durations to tasks</strong> — even rough estimates (30 min, 1 hr) make your weekly and monthly analytics much more useful.</li>
+  <li><strong>Categories drive analytics</strong> — create categories that match areas of your life (Work, Study, Health, Personal) so the time breakdown in Analytics is meaningful.</li>
+  <li><strong>Use recurrence for routines</strong> — set up recurring tasks for things you do every day or week so you don't have to recreate them manually.</li>
+  <li><strong>Habits + Tasks together</strong> — enable "Show in Tasks" on important habits so everything for the day appears in one list.</li>
+  <li><strong>Backup before switching phones</strong> — always export a backup before uninstalling or changing devices. Your data does not sync to any cloud automatically.</li>
+  <li><strong>Dark mode</strong> — switch to dark mode in Settings for a comfortable experience in low-light conditions.</li>
+  <li><strong>Carry-forward for accountability</strong> — turn on carry-forward so incomplete tasks follow you to the next day instead of silently disappearing.</li>
+</ul>
+
+<hr>
+
+<h2>Need help?</h2>
+<p>If you have a question or found a bug, reach out at <a href="mailto:dly.task.app@gmail.com">dly.task.app@gmail.com</a>. We'll get back to you as soon as possible.</p>
+
+<p style="margin-top: 48px; font-size: 0.85rem; color: #aaa; text-align: center;">
+  © 2026 Dly · <a href="privacy_policy.html">Privacy Policy</a> · <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
+</p>
+
+</body>
+</html>
